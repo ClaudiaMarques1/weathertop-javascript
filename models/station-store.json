@@ -1,0 +1,78 @@
+{
+  "stationCollection": [
+    {
+      "id": "ec33c560-0daa-11ec-acc8-47c2781b1ceb",
+      "title": "Ballincollig",
+      "lat": "",
+      "lng": "",
+      "readings": []
+    },
+    {
+      "id": "5b98f750-0e40-11ec-acda-9359727d2a9c",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Ballincollig",
+      "lat": "3.5",
+      "lng": "4.6",
+      "readings": [
+        {
+          "id": "65070f20-0e40-11ec-acda-9359727d2a9c",
+          "code": "700",
+          "temperature": "8.5",
+          "windSpeed": "3",
+          "windDirection": "100",
+          "pressure": "1008",
+          "date": "2020-01-09 20:20:00"
+        },
+        {
+          "id": "01ee6920-10a6-11ec-9ba2-658f833301e1",
+          "code": "800",
+          "temperature": "3.0",
+          "windSpeed": "3",
+          "windDirection": "600",
+          "pressure": "1003"
+        },
+        {
+          "id": "031da510-10cc-11ec-8f5c-cd981eb9abc8",
+          "code": "600",
+          "temperature": "8.5",
+          "windSpeed": "3",
+          "windDirection": "600",
+          "pressure": "1005"
+        },
+        {
+          "id": "bf50fb80-1336-11ec-a79d-d1972110bf66",
+          "code": "200",
+          "temperature": "2.5",
+          "windSpeed": "6.25",
+          "windDirection": "300",
+          "pressure": "1001"
+        }
+      ]
+    },
+    {
+      "id": "a0b5e770-0e6e-11ec-8e15-33b0a6076a0f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tramore",
+      "lat": "3.5",
+      "lng": "4.6",
+      "readings": [
+        {
+          "id": "f9c87c60-0e6e-11ec-8e15-33b0a6076a0f",
+          "code": "700",
+          "temperature": "8.5",
+          "windSpeed": "3",
+          "windDirection": "100",
+          "pressure": "1008"
+        }
+      ]
+    },
+    {
+      "id": "3d530190-109e-11ec-94bc-79e7b6b0d1c4",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Dunmore",
+      "lat": "1.7",
+      "lng": "8.1",
+      "readings": []
+    }
+  ]
+}
