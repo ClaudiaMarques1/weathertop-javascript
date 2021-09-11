@@ -1,0 +1,65 @@
+<div class = "ui five inverted cards">
+  <div class="ui card">
+  <div class="content">
+    <i class="right floated large marker violet icon"></i>
+    <h3 class="ui ui left aligned header">{{station.title}}</h3>
+    <div class="left aligned description">
+      <div class="ui text"> Lat {{station.lat}}</div>
+      <div class="ui text"> Lng {{station.lng}}</div>
+    </div>
+    </div>
+    </div>
+     <div class="ui card">
+  <div class="content">
+    <i class="right floated large {{stationSummary.latestWeatherIcons}} red icon"></i>
+    <h3 class="ui ui left aligned header">Weather</h3>
+    <div class="left aligned description">
+      <div class="ui text">{{stationSummary.latestWeatherCodes}}</div>
+    </div>
+    </div>
+    </div>
+     <div class="ui card">
+  <div class="content">
+    <i class="right floated large temperature low green icon"></i>
+    <h3 class="ui left aligned header">Temperature</h3>
+    <div class="left aligned description">
+      <div class="ui text">{{stationSummary.latestTempF}}F</div>
+      <div class="ui text">{{stationSummary.latestTempC}}C</div>
+      <div class="ui text"> Max: {{stationSummary.latestMaxTemp}}</div>
+      <div class="ui text">Min: {{stationSummary.latestMinTemp}}</div>
+      <div class="ui text"> Temp Trend</div>
+      </div>
+    </div>
+  </div>
+     <div class="ui card">
+  <div class="content">
+    <i class="right floated large wind blue icon"></i>
+    <h3 class="ui ui left aligned header">Wind Speed</h3>
+    <div class="left aligned description">
+      <div class="ui text">{{stationSummary.latestWindSpeedBeaufort}}bft;</div>
+      <div class="ui text">{{stationSummary.latestWindCompass}}</div>
+    </div>
+       <div class="left aligned description">
+          <div class="ui text"> Feels Like:</div>
+          <div class="ui text"> {{stationSummary.latestWindChill}}</div>
+          <div class="ui text"> Max WindSpeed</div>
+          <div class="ui text"> Min WindSpeed</div>
+          <div class="ui text"> Wind Trend</div>
+         </div>
+    </div>
+    </div>
+     <div class="ui card">
+  <div class="content">
+    <i class="right floated large centos orange icon"></i>
+    <h3 class="ui ui left aligned header">Pressure</h3>
+    <div class="left aligned description">
+      <div class="ui text"> {{stationSummary.latestPressure}} hPa</div>
+    </div>
+       <div class="left aligned description">
+         <div class="ui text"> Max Pressure</div>
+          <div class="ui text"> Min Pressure</div>
+          <div class="ui text"> Pressure Trend</div>
+         </div>
+    </div>
+    </div>
+ </div>
