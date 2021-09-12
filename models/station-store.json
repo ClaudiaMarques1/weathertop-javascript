@@ -15,32 +15,14 @@
           "windDirection": "100",
           "pressure": "1008",
           "date": "2020-01-09 20:20:00"
-        },
-        {
-          "id": "01ee6920-10a6-11ec-9ba2-658f833301e1",
-          "code": "800",
-          "temperature": "3.0",
-          "windSpeed": "3",
-          "windDirection": "600",
-          "pressure": "1003"
-        },
-        {
-          "id": "031da510-10cc-11ec-8f5c-cd981eb9abc8",
-          "code": "600",
-          "temperature": "8.5",
-          "windSpeed": "3",
-          "windDirection": "600",
-          "pressure": "1005"
-        },
-        {
-          "id": "bf50fb80-1336-11ec-a79d-d1972110bf66",
-          "code": "200",
-          "temperature": "2.5",
-          "windSpeed": "6.25",
-          "windDirection": "300",
-          "pressure": "1001"
         }
-      ]
+      ],
+      "minTemp": "8.5",
+      "maxTemp": "8.5",
+      "minPressure": "1003",
+      "maxPressure": "1008",
+      "minWindSpeed": "3",
+      "maxWindSpeed": "6.25"
     },
     {
       "id": "a0b5e770-0e6e-11ec-8e15-33b0a6076a0f",
@@ -57,14 +39,20 @@
           "windDirection": "100",
           "pressure": "1008"
         }
-      ]
+      ],
+      "minTemp": "8.5",
+      "maxTemp": "8.5",
+      "minPressure": "1008",
+      "maxPressure": "1008",
+      "minWindSpeed": "3",
+      "maxWindSpeed": "3"
     },
     {
-      "id": "3d530190-109e-11ec-94bc-79e7b6b0d1c4",
+      "id": "82148b30-1401-11ec-bd59-8df423011a9c",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Dunmore",
-      "lat": "1.7",
-      "lng": "8.1",
+      "lat": "22.00",
+      "lng": "33.00",
       "readings": []
     }
   ]

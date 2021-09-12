@@ -1,6 +1,6 @@
 'use strict';
 
-const maxmin = {
+const maxMin = {
   getMinTemp(station) { // This is the smallest temperature reading calculation
     let minTemp = null;
     if (station.readings.length > 0) {
@@ -81,4 +81,4 @@ const maxmin = {
   
 };
 
-module.exports = maxmin;
+module.exports = maxMin;
