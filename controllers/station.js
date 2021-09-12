@@ -4,7 +4,7 @@ const logger = require("../utils/logger");
 const uuid = require("uuid");
 const stationStore = require("../models/station-store.js");
 const stationAnalytics = require("../utils/station-analytics.js");
-const maxmin = require("../utils/max-min.js");
+const maxMin = require("../utils/max-min.js");
 const axios = require("axios");
 
 const station = { // This ensures you are able to bring all the calculations made in Max Min and Analytics to station.
@@ -14,12 +14,12 @@ const station = { // This ensures you are able to bring all the calculations mad
     const station = stationStore.getStation(stationId);
     const latestReading = stationAnalytics.getLatestReading(station.readings);
     if (station.readings.length > 0) { // These are the Max and Mins of the readings.
-      station.minTemp = maxmin.getMinTemp(station)
-      station.maxTemp = maxmin.getMaxTemp(station)
-      station.minPressure = maxmin.getMinPressure(station)
-      station.maxPressure = maxmin.getMaxPressure(station)
-      station.minWindSpeed = maxmin.getMinWindSpeed(station)
-      station.maxWindSpeed = maxmin.getMaxWindSpeed(station)
+      station.minTemp = maxMin.getMinTemp(station)
+      station.maxTemp = maxMin.getMaxTemp(station)
+      station.minPressure = maxMin.getMinPressure(station)
+      station.maxPressure = maxMin.getMaxPressure(station)
+      station.minWindSpeed = maxMin.getMinWindSpeed(station)
+      station.maxWindSpeed = maxMin.getMaxWindSpeed(station)
       }
     const viewData = {
       title: station.title + " Weather Station",
