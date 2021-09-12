@@ -1,13 +1,6 @@
 {
   "stationCollection": [
     {
-      "id": "ec33c560-0daa-11ec-acc8-47c2781b1ceb",
-      "title": "Ballincollig",
-      "lat": "",
-      "lng": "",
-      "readings": []
-    },
-    {
       "id": "5b98f750-0e40-11ec-acda-9359727d2a9c",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Ballincollig",

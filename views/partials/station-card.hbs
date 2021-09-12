@@ -14,7 +14,7 @@
     <i class="right floated large marker red icon"></i>
     <h3 class="ui ui left aligned header">Weather</h3>
     <div class="description">
-      <div class="ui text">{{stationSummary.latestWeatherCodes}}</div>
+      <div class="ui text">{{dashboardSummary.latestWeatherCodes}}</div>
     </div>
     </div>
     </div>
@@ -42,7 +42,7 @@
        <div class="left aligned description">
           <div class="ui text"> Feels Like:</div>
           <div class="ui text"> {{stationSummary.latestWindChill}}</div>
-          <div class="ui text"> Max WindSpeed</div>
+          <div class="ui text"> Max {{station.minTemp}}</div>
           <div class="ui text"> Min WindSpeed</div>
           <div class="ui text"> Wind Trend</div>
          </div>

@@ -25,8 +25,8 @@
     <div class="left aligned description">
       <div class="ui text">{{stationSummary.latestTempF}}F</div>
       <div class="ui text">{{stationSummary.latestTempC}}C</div>
-      <div class="ui text"> Max: {{stationSummary.latestMaxTemp}}</div>
-      <div class="ui text">Min: {{stationSummary.latestMinTemp}}</div>
+      <div class="ui text">Max: {{station.maxTemp}}</div>
+      <div class="ui text">Min: {{station.minTemp}}</div>
       <div class="ui text"> Temp Trend</div>
       </div>
     </div>
@@ -42,8 +42,8 @@
        <div class="left aligned description">
           <div class="ui text"> Feels Like:</div>
           <div class="ui text"> {{stationSummary.latestWindChill}}</div>
-          <div class="ui text"> Max WindSpeed</div>
-          <div class="ui text"> Min WindSpeed</div>
+          <div class="ui text"> Max: {{station.maxWindSpeed}}</div>
+          <div class="ui text"> Min: {{station.minWindSpeed}}</div>
           <div class="ui text"> Wind Trend</div>
          </div>
     </div>
@@ -56,9 +56,9 @@
       <div class="ui text"> {{stationSummary.latestPressure}} hPa</div>
     </div>
        <div class="left aligned description">
-         <div class="ui text"> Max Pressure</div>
-          <div class="ui text"> Min Pressure</div>
-          <div class="ui text"> Pressure Trend</div>
+         <div class="ui text"> Max: {{station.maxPressure}}</div>
+         <div class="ui text"> Min: {{station.minPressure}}</div>
+         <div class="ui text"> Pressure Trend</div>
          </div>
     </div>
     </div>

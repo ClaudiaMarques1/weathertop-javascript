@@ -11,7 +11,7 @@ const reading = require("./controllers/reading.js");
 
 router.get("/about", about.index);
 router.get("/dashboard", dashboard.index);
-router.post("/station/addreport", station.addreport);
+router.post("/station/addreport", station.addReport);
 router.get("/dashboard/deletestation/:id", dashboard.deleteStation);
 router.post("/dashboard/addstation", dashboard.addStation);
 

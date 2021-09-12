@@ -4,7 +4,7 @@ const userstore = require("../models/user-store");
 const logger = require("../utils/logger");
 const uuid = require("uuid");
 
-const accounts = {
+const accounts = { // This ensures that the start of the application gets you to sign up or login to weathertop.
   index(request, response) {
     const viewData = {
       title: "Login or Signup"
@@ -12,26 +12,26 @@ const accounts = {
     response.render("index", viewData);
   },
 
-  login(request, response) {
+  login(request, response) { // This ensures you are able to login to the application.
     const viewData = {
       title: "Login to the Weathertop"
     };
     response.render("login", viewData);
   },
 
-  logout(request, response) {
+  logout(request, response) { // This ensures you are able to logout of the application.
     response.cookie("station", "");
     response.redirect("/");
   },
 
-  signup(request, response) {
+  signup(request, response) { // This ensures you are able to signup to the application.
     const viewData = {
       title: "Login to the Weathertop"
     };
     response.render("signup", viewData);
   },
 
-  register(request, response) {
+  register(request, response) { // This ensures you are able to register the account after you have signed up to the application.
     const user = request.body;
     user.id = uuid.v1();
     userstore.addUser(user);
@@ -39,7 +39,7 @@ const accounts = {
     response.redirect("/");
   },
 
-  authenticate(request, response) {
+  authenticate(request, response) { // This verifies your email and password is correct when signing in to the application.
     const user = userstore.getUserByEmail(request.body.email);
     if (user) {
       response.cookie("station", user.email);
@@ -50,7 +50,7 @@ const accounts = {
     }
   },
 
-  getCurrentUser(request) {
+  getCurrentUser(request) { // This ensures that you get sign in to multiple accounts on the application, not just one.
     const userEmail = request.cookies.station;
     return userstore.getUserByEmail(userEmail);
   }

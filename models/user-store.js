@@ -7,20 +7,20 @@ const userStore = {
   store: new JsonStore("./models/user-store.json", { users: [] }),
   collection: "users",
 
-  getAllUsers() {
+  getAllUsers() { // Lets you get all the users in the collection
     return this.store.findAll(this.collection);
   },
 
-  addUser(user) {
+  addUser(user) { // add the users to the collection
     this.store.add(this.collection, user);
     this.store.save();
   },
 
-  getUserById(id) {
+  getUserById(id) { // get a specific user by ID from the collection
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  getUserByEmail(email) {
+  getUserByEmail(email) { // get a specific user by Email from the collection
     return this.store.findOneBy(this.collection, { email: email });
   }
 };
