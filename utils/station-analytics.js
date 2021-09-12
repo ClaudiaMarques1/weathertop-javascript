@@ -1,8 +1,8 @@
 "use strict";
 
 const stationAnalytics = {
-  getLatestReading(reading) {
-    return reading[reading.length - 1];
+  getLatestReading(readings) {
+    return readings[readings.length - 1];
   },
 
   celsiusToFahrenheit(temperature) {
@@ -151,32 +151,6 @@ const stationAnalytics = {
     }
   },
 
-  getMinTemp(station) {
-    let minTemp = null;
-    if (station.readings.length > 0) {
-      minTemp = station.readings[0];
-      for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temperature < minTemp.temperature) {
-          minTemp = station.readings[i];
-        }
-      }
-    }
-    return minTemp;
-    console.log(minTemp);
-  },
-
-  getMaxTemp(station) {
-    let maxTemp = null;
-    if (station.readings.length > 0) {
-      maxTemp = station.readings[0];
-      for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temperature < maxTemp.temperature) {
-          maxTemp = station.readings[i];
-        }
-      }
-    }
-    return maxTemp;
-  }
 };
 
 module.exports = stationAnalytics;

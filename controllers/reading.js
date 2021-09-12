@@ -3,8 +3,7 @@
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 
-
-const reading = {
+const reading = { // This ensures you are able to edit your readings
   index(request, response) {
     const stationId = request.params.id;
     const readingId = request.params.readingid;
@@ -17,13 +16,13 @@ const reading = {
     response.render("reading", viewData);
   },
 
-  update(request, response) {
+  update(request, response) { // This ensures you are able to update your readings.
     const stationId = request.params.id;
     const readingId = request.params.readingid;
-    const reading = stationStore.getReading(stationId, readingId)
+    const reading = stationStore.getReading(stationId, readingId);
     const newReading = {
       date: request.body.date,
-      code:request.body.code,
+      code: request.body.code,
       temperature: request.body.temperature,
       windSpeed: request.body.windSpeed,
       windDirection: request.body.windDirection,
@@ -32,7 +31,7 @@ const reading = {
     logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
     stationStore.updateReading(reading, newReading);
     response.redirect("/station/" + stationId);
-  },
+  }
 };
 
 module.exports = reading;
